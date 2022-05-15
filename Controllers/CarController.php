@@ -16,19 +16,6 @@
             
             break;
 
-        case 'actualizar':
-                $brand= $_REQUEST['brand'];
-                $model= $_REQUEST['model'];
-                $year= $_REQUEST['year'];
-                $color= $_REQUEST['color'];
-                $status= $_REQUEST['status'];
-                $car = new Car($brand,$model,$year,$color,$status);
-                $resultado = $departamento->update($_REQUEST['id']);
-    
-                return $resultado;
-    
-                
-                break;
         
         default:
             # code...
